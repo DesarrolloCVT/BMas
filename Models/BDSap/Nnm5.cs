@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace NuevoBMas.Models.BDSap;
+
+public partial class Nnm5
+{
+    public string ObjectCode { get; set; } = null!;
+
+    public int Series { get; set; }
+
+    public string DocSubType { get; set; } = null!;
+
+    public int Number { get; set; }
+}

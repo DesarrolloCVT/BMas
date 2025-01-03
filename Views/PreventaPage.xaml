@@ -1,0 +1,42 @@
+﻿<Page x:Class="NuevoBMas.Views.PreventaPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NuevoBMas.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PreventaPage">
+
+    <Grid Background="white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <RadioButton x:Name="rBtn_Boleta" Content="Boleta" HorizontalAlignment="Left" Margin="63,30,0,0" VerticalAlignment="Top" Height="30" Width="112" FontSize="20"/>
+        <RadioButton x:Name="rBtn_Factura" Content="Factura" HorizontalAlignment="Left" Margin="203,30,0,0" VerticalAlignment="Top" Height="30" Width="122" FontSize="20"/>
+
+        <TextBox x:Name="txt_BuscaCliente" HorizontalAlignment="Left" Margin="210,80,0,0" TextWrapping="Wrap" Text="Busca cliente" Foreground="gray" VerticalAlignment="Top" Width="335" Height="35" FontSize="18" Grid.RowSpan="2"/>
+        <Button x:Name="btn_NuevoCliente" Content="Nuevo cliente" Background="#FF4500" BorderBrush="DarkSlateGray" BorderThickness="3" Foreground="White" HorizontalAlignment="Left" Margin="555,80,0,0" VerticalAlignment="Top" Height="35" Width="100" Click="Button_Click" Grid.RowSpan="2"/>
+        <Button x:Name="btn_EditaCliente" Content="Edita cliente" Background="#FF4500" BorderBrush="DarkSlateGray" BorderThickness="3" Foreground="White" HorizontalAlignment="Left" Margin="670,80,0,0" VerticalAlignment="Top" Height="35" Width="100" Grid.RowSpan="2"/>
+        <TextBox x:Name="txt_NombreCliente" HorizontalAlignment="Left" Margin="210,55,0,0" TextWrapping="Wrap" Text="Nombre cliente" Foreground="Gray" VerticalAlignment="Top" Width="335" Height="35" FontSize="18" Grid.Row="1"/>
+        <TextBox x:Name="txt_CodigoCliente" HorizontalAlignment="Left" Margin="210,15,0,0" TextWrapping="Wrap" Text="Código cliente" Foreground="Gray" VerticalAlignment="Top" Width="335" Height="35" FontSize="18" Grid.Row="1"/>
+        <TextBox x:Name="txt_IdentificadorCliente" HorizontalAlignment="Left" Margin="210,95,0,0" TextWrapping="Wrap" Text="Identificador" Foreground="Gray" VerticalAlignment="Top" Width="335" Height="35" FontSize="18" Grid.Row="1"/>
+        <ComboBox x:Name="cmb_DirEnvio" HorizontalAlignment="Left" Margin="210,135,0,0" VerticalAlignment="Top" Width="335" Height="32" Grid.Row="1"/>
+        <ComboBox x:Name="cmb_DirFactur" HorizontalAlignment="Left" Margin="210,173,0,0" VerticalAlignment="Top" Width="335" Height="32" Grid.Row="1"/>
+        <TextBox x:Name="txt_Telefono" HorizontalAlignment="Left" Margin="210,212,0,0" TextWrapping="Wrap" Text="Telefono" Foreground="Gray" VerticalAlignment="Top" Width="335" Height="35" FontSize="18" Grid.Row="1"/>
+        <TextBox x:Name="txt_Mail" HorizontalAlignment="Left" Margin="210,253,0,0" TextWrapping="Wrap" Text="Mail" Foreground="Gray" VerticalAlignment="Top" Width="335" Height="35" FontSize="18" Grid.Row="1"/>
+        <ComboBox x:Name="cmb_GrupoCliente" HorizontalAlignment="Left" Margin="210,295,0,0" VerticalAlignment="Top" Width="335" Height="32" Grid.Row="1"/>
+        <Button x:Name="btn_Pickear" Content="Pickear" Background="#FF4500" BorderBrush="DarkSlateGray" BorderThickness="3" Foreground="White" HorizontalAlignment="Left" Margin="570,260,0,0" VerticalAlignment="Top" Height="55" Width="195" FontSize="24" Grid.Row="1"/>
+        <Label x:Name="lbl_BuscaCliente" Content="Buscar cliente" HorizontalAlignment="Left" Margin="80,80,0,0" VerticalAlignment="Top" Width="118" Height="35" FontSize="18" Grid.RowSpan="2"/>
+        <Label x:Name="lbl_CodigoCliente" Content="Código cliente" HorizontalAlignment="Left" Margin="75,20,0,0" VerticalAlignment="Top" Width="128" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_NombreCliente" Content="Nombre cliente" HorizontalAlignment="Left" Margin="66,58,0,0" VerticalAlignment="Top" Width="133" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_IdCliente" Content="     RUN cliente" HorizontalAlignment="Left" Margin="69,96,0,0" VerticalAlignment="Top" Width="133" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_DirEnvio" Content="Dirección envío" HorizontalAlignment="Left" Margin="69,135,0,0" VerticalAlignment="Top" Width="133" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_DirFactur" Content="Dirección facturación" HorizontalAlignment="Left" Margin="22,175,0,0" VerticalAlignment="Top" Width="180" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_Telefono" Content="Teléfono" HorizontalAlignment="Left" Margin="122,215,0,0" VerticalAlignment="Top" Width="85" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_Mail" Content="      Email" HorizontalAlignment="Left" Margin="115,255,0,0" VerticalAlignment="Top" Width="85" Height="35" FontSize="18" Grid.Row="1"/>
+        <Label x:Name="lbl_Mail_Copiar" Content="Grupo cliente" HorizontalAlignment="Left" Margin="85,295,0,0" VerticalAlignment="Top" Width="120" Height="35" FontSize="18" Grid.Row="1"/>
+
+    </Grid>
+</Page>
